@@ -4,17 +4,29 @@
 		<title>About Us</title>
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
 		<script src="js/jquery-3.3.1.min.js"></script>
     	<script src="js/bootstrap.bundle.min.js"></script>
-		<!-- <link rel="stylesheet" type="text/css" href="aboutStyle.css"> -->
+		
 		<style>
-				.scrolled{
-					background-color: #000;
-					transition: .5s ease-in-out;
-				}
-				hr{
-				width: 80%;background: rgb(230,43,30); 
-				}
+			a{
+            cursor: pointer;
+        	}
+			.scrolled{
+				background-color: #000;
+				transition: .5s ease-in-out;
+			}
+			hr{
+			width: 80%;background: rgb(230,43,30); 
+			}
+			.footer-links{
+            text-decoration: none;
+            color:#000;
+			}
+			.footer-links:hover{
+				color:#fff;
+				transition: .3s;
+			}
 		</style>
 		
 		
@@ -22,41 +34,12 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<!-- <section> -->
-			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-trans">
-				<div class="container">
-					<a href="index.html" class="navbar-brand" style="font-size:2em"> <span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-weight: 900;"> TED<sup>x</sup></span>JNEC </a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navigate" aria-expanded="false" aria-controls="#navigate">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navigate">
-						<ul class="navbar-nav text-center ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="index.html"> Home </a>
-							</li>
-								<a class="nav-link" href=""> Home </a>
-							<li class="nav-item active">
-								<a class="nav-link" href="about.html"> About Us </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href=""> Team </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href=""> Bookings </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href=""> Partners </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href=""> Contact Us </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</section>
+		<div id="navigation">
+
+
+		</div>
 		
-		<!-- <section> -->
+		<section>
 			<div class="container-fluid" >
 				<div class="row" style="padding-top: 8em;background-image: url('images/123.jpg');">
 					<div class="col " >
@@ -124,16 +107,21 @@
 		</div>
 	</div>
 </section>
+
+<div id="mainfooter">
+
+
+</div>
+
+
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-	<script>
-		$(window).scroll(function(){
-			$('nav').toggleClass('scrolled',$(this).scrollTop()>50);
-		});
+   
+	<script src="js/support.js">
+		
 	</script>
 
 
