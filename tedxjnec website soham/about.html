@@ -12,20 +12,20 @@
 					background-color: #000;
 					transition: .5s ease-in-out;
 				}
+				hr{
+				width: 80%;background: rgb(230,43,30); 
+				}
 		</style>
-		<script>
-				$(window).scroll(function(){
-					$('nav').toggleClass('scrolled',$(this).scrollTop()>50);
-				});
-			</script>
 		
+		
+	
 	</head>
 	<body>
 		<!-- Navbar -->
 		<!-- <section> -->
 			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-trans">
 				<div class="container">
-					<a href="index.html" class="navbar-brand h1" style="font-size:2em"> <span style="color: #ff0000"> Ted<sup>x</sup></span>JNEC </a>
+					<a href="index.html" class="navbar-brand" style="font-size:2em"> <span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-weight: 900;"> TED<sup>x</sup></span>JNEC </a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#navigate" aria-expanded="false" aria-controls="#navigate">
 					<span class="navbar-toggler-icon"></span>
 					</button>
@@ -34,6 +34,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="index.html"> Home </a>
 							</li>
+								<a class="nav-link" href=""> Home </a>
 							<li class="nav-item active">
 								<a class="nav-link" href="about.html"> About Us </a>
 							</li>
@@ -60,7 +61,7 @@
 				<div class="row" style="padding-top: 8em;background-image: url('images/123.jpg');">
 					<div class="col " >
 						
-						<h1 class="text-center display-2">About<span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">  TED<sup style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">x</sup></span>JNEC</h1>
+						<h1 class="text-center display-2">About<span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-weight: 900; ">  TED<sup>x</sup></span>JNEC</h1>
 						<div class="container">
 						
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -97,14 +98,16 @@
 					<div class="col-sm-12 col-lg-6">
 						<div class="content" style="margin-top: 60px;">
 							<p>
-								<b class="display-4 "><span >What is <span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">TED<sup style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">x</sup></span></span> ?</b><br>
+								<b class="display-4 "><span >What is <span style="color:#e62b1e;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-weight: 900; ">TED<sup>x</sup></span></span> ?</b><br>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Id aliquet risus feugiat in. Sed egestas egestas fringilla phasellus faucibus scelerisque. Montes nascetur ridiculus mus mauris vitae ultricies. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Viverra justo nec ultrices dui. Orci eu lobortis elementum nibh tellus. Luctus accumsan tortor posuere ac ut consequat. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. A diam maecenas sed enim ut sem. Mi tempus imperdiet nulla malesuada. Convallis tellus id interdum velit laoreet id donec ultrices.<br>
 							</p>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<hr>
 	</section>
 	<section>
 		<br>
@@ -125,8 +128,14 @@
 <script>
 AOS.init();
 </script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper-utils.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(window).scroll(function(){
+			$('nav').toggleClass('scrolled',$(this).scrollTop()>50);
+		});
+	</script>
+
+
 </body>
 </html>
