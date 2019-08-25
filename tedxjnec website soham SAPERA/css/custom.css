@@ -1,0 +1,16 @@
+a{
+    cursor: pointer;
+}
+.scrolled{
+    background-color: #fff;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.footer-links{
+    text-decoration: none;
+    color:#000;
+}
+.footer-links:hover{
+    color:#fff;
+    transition: .3s;
+}
