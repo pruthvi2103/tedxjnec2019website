@@ -1,5 +1,6 @@
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 .scrolled{
     background-color: #fff;
@@ -13,4 +14,15 @@ a{
 .footer-links:hover{
     color:#fff;
     transition: .3s;
+}
+
+.footer-link--brand{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-link--brand:hover{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
 }
