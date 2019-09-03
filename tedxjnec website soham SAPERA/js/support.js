@@ -4,5 +4,4 @@ $(window).scroll(function(){
 $(function(){
     $('#mainfooter').load('footer.html');
     $('#navigation').load('navbar.html');
-    $('#preloader').load('preloader.html');
 });
