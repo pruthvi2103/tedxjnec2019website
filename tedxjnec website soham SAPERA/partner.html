@@ -129,8 +129,17 @@
 		</section>
 		<!-- footer -->
 		<div id="mainfooter"> </div>
-		<script src="js/support.js"></script>
+		<!-- <script src="js/support.js"></script> -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			setTimeout(function(){
+			$('#preloader').fadeOut('slow', function() {
+			$(this).remove();
+			});
+			}, 1500);
+			});
+			</script>
 		<script>
 		AOS.init();
 		</script>
