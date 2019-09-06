@@ -1,4 +1,6 @@
-<section id ="preloader" class="wrapper">
+
+<div class="preloader">
+<div id ="cent" class="wrapper">
 	<div class="spinner">
 		<i></i>
 		<i></i>
@@ -8,14 +10,16 @@
 		<i></i>
 		<i></i>
 	</div>
-</section>
-
+</div>
+</div>
 <script type="text/javascript">
-$(function(){
-setTimeout(function(){
-$('#preloader').fadeOut('slow', function() {
-$(this).remove();
-});
-}, 1500);
-});
-</script>
+	$(function(){
+	setTimeout(function(){
+	$('#preloader').fadeOut('slow', function() {
+	$(this).remove();
+	});
+	}, 1500);
+	});
+	</script>
+
+

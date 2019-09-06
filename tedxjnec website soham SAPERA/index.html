@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pre_loader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/particles.min.js"></script>
+    <!-- <script src="js/particles.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <link rel="stylesheet" href="css/brainstyle.css"> -->
 
@@ -26,6 +27,11 @@
     
 
  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+ <!--LAZY LOADER HEADER-->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
     <style>
 
 
@@ -108,9 +114,10 @@
         
        canvas{ display: block; vertical-align: bottom; } 
        /* ---- particles.js container ---- */ 
-       /* #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000; /*background-image: url("15.jpg");*/ background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }  */
+       /* #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000; /*background-image: url("15.jpg");*/ 
+      /* background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }  */
        .iframe-container {
-           background-color: rgb(243, 243,240)
+           background-color: rgb(243, 243,240);
   overflow: hidden;
    /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
   padding-top: 56.25%;
@@ -145,19 +152,26 @@
     <div id="navigation"></div>
     <!-- <div id="particles-js"></div> -->
 
+
+    <!-- preloader -->
+		<div id="preloader"></div>
+		
+
     <div class="container-fluid">
     <div class="iframe-container">
         <!-- <div class="container"> -->
 
-            <iframe src="test1.html"></iframe>
 
         <!-- </div> -->
     </div>
 </div>
 
 
-<div class="container-fluid" style="background-color: #000;background-size: cover;background-repeat: no-repeat;">
-    <div class="container" style="width:100%;height:100vh"></div>
+<div class="container-fluid" style="border:none ;background-color:  #f2f2ef;background-size: cover;background-repeat: no-repeat;padding-right: 0%;padding-left: 0%">
+ 
+  <iframe src="test1.html" style="width:100%;height:100vh;border:0;left: 0;"></iframe>
+  
+    <!-- <div class="container" style="width:100%;height:100vh"></div> -->
 </div>
 <!-- Kabir singh bann jayega mai preeti hai vo -->
 
@@ -184,11 +198,11 @@
           <!-- Icon Divider -->
     <h1 style="color:red;text-align: center"> SPEAKERS 2K19</h1>
           <div class="divider-custom">
-            <div class="divider-custom-line"> </div>
+            <!-- <div class="divider-custom-line"> </div>
             <div class="divider-custom-icon">
               <i class="fas fa-times" style="color:red"></i>
             </div>
-            <div class="divider-custom-line"></div>
+            <div class="divider-custom-line"></div> -->
           </div>
              
                 
@@ -316,35 +330,36 @@
     <!-- <div class="container-fluid" style="background-image: url('images/15.jpg');background-size: cover;background-repeat: no-repeat;">
         <div class="container" style="width:100%;height:100vh"></div>
     </div> -->
+
     <div>
     <div class="container-fluid" style="position: relative; background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/backG.jpg');background-attachment: fixed; background-size: cover;background-repeat: no-repeat ;background-position: center;height: 50vh;">
       <div class="topic text-center pt-5" style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;color: #fff;font-weight: 50;">Glimpse of <span style="color:#e62b1e;font-weight: 900;">TED<sup>x</sup></span>JNEC 2k18</div> 
-      <div class="container speaker" style="width:100%;height:200%;position:absolute;top:50%;left:50%;transform: translate(-50%,-0%); background-color:#95afc0; row-md-12 col-md-12">
+      <div class="container speaker"  style="width:100%;height:200%;position:absolute;top:50%;left:50%;transform: translate(-50%,-0%); background-color:transparent; row-md-12 col-md-12 col-lg-4 row-lg-4;">
             
-          <div class="row">
+          <div class="row" >
                 <div class="column">
-                    <img src="images/100.png"></img>
-                    <img src="images/105.jpg"></img>
-                    <img src="images/102.jpg"></img>
-                    <img src="images/103.jpg"></img>
-                    <img src="images/104.jpg"></img>
-                    <img src="images/116.jpg"></img>
+                    <img data-aos="zoom-in"src="images/100.png"></img>
+                    <img data-aos="zoom-in"src="images/105.jpg"></img>
+                    <img data-aos="zoom-in" src="images/102.jpg"></img>
+                    <img data-aos="zoom-in" src="images/103.jpg"></img>
+                    <img data-aos="zoom-in" src="images/104.jpg"></img>
+                    <img data-aos="zoom-in" src="images/116.jpg"></img>
                 </div>
                 <div class="column">
-                    <img src="images/107.jpg"></img>
-                    <img src="images/104.jpg"></img>
-                    <img src="images/101.jpg"></img>
-                    <img src="images/108.jpg"></img>
-                    <img src="images/109.jpg"></img>
-                    <img src="images/110.jpg"></img>
+                    <img data-aos="zoom-in" src="images/107.jpg"></img>
+                    <img data-aos="zoom-in" src="images/104.jpg"></img>
+                    <img data-aos="zoom-in" src="images/101.jpg"></img>
+                    <img data-aos="zoom-in" src="images/108.jpg"></img>
+                    <img data-aos="zoom-in" src="images/109.jpg"></img>
+                    <img  data-aos="zoom-in" src="images/110.jpg"></img>
                 </div>
                 <div class="column">
-                    <img src="images/111.jpg"></img>
-                    <img src="images/116.jpg"></img>
-                    <img src="images/113.jpg"></img>
-                    <img src="images/114.jpg"></img>
-                    <img src="images/115.jpg"></img>
-                    <img src="images/112.jpg"></img>
+                    <img  data-aos="zoom-in-right"src="images/111.jpg"></img>
+                    <img data-aos="zoom-in-right" src="images/116.jpg" ></img>
+                    <img data-aos="zoom-in-right" src="images/113.jpg"></img>
+                    <img data-aos="zoom-in-right" src="images/114.jpg"></img>
+                    <img data-aos="zoom-in-right" src="images/115.jpg"></img>
+                    <img data-aos="zoom-in-right" src="images/112.jpg"></img>
                 </div>
             </div>
         </div>
@@ -361,13 +376,13 @@
 
 
 
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
 
 
 
 
 
-<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
 
 
@@ -394,6 +409,8 @@
   <script src="js/support.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
   <script>
     AOS.init();
   </script>
